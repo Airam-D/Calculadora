@@ -45,6 +45,10 @@ body {
   cursor: pointer;
   transition: background-color 0.2s, transform 0.1s;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
 }
 
 .theme-toggle:hover {
@@ -240,10 +244,4 @@ button:active {
 .dark-theme .theme-toggle {
   background-color: #ffffff;
   color: #1a1a1a;
-}
-
-.scientific-buttons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 15px;
 }
