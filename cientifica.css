@@ -109,7 +109,6 @@ button:active {
   grid-column: span 2;
   background-color: #2a9d8f;
   color: #ffffff;
-  width: 100%;
 }
 
 .equal-sign:hover {
@@ -233,9 +232,16 @@ button:active {
   background-color: #555555;
 }
 
-.dark-theme .theme-toggle {
-  background-color: #ffffff;
-  color: #1a1a1a;
+.theme-toggle {
+  background-color: #f4f6f8;
+  color: #495057;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 20px;
   right: 20px;
