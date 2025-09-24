@@ -40,7 +40,8 @@ body {
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   padding: 25px;
-  width: 420px;
+  max-width: 420px;
+  width: 90%;
   border: 1px solid #e0e6ed;
 }
 
@@ -125,4 +126,41 @@ button:active {
 
 .zero {
   grid-column: span 2;
+}
+
+.number-button,
+.decimal {
+  background-color: #f4f6f8;
+}
+
+.number-button:hover,
+.decimal:hover {
+  background-color: #e9ecef;
+}
+
+@media (max-width: 480px) {
+  .calculator {
+    padding: 15px;
+  }
+
+  .calculator-screen {
+    font-size: 1.8rem;
+    height: 50px;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+
+  .calculator-buttons {
+    grid-gap: 8px;
+  }
+
+  button {
+    height: 45px;
+    font-size: 1rem;
+  }
+
+  .scientific-button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
 }
