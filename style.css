@@ -241,3 +241,9 @@ button:active {
   background-color: #ffffff;
   color: #1a1a1a;
 }
+
+.scientific-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
