@@ -150,3 +150,26 @@ function clearLastDigit() {
 function updateDisplay() {
   display.value = expression === "" ? "0" : expression;
 }
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  const themeToggle = document.getElementById("theme-toggle");
+  const body = document.body;
+
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    body.classList.add("dark-theme");
+    themeToggle.textContent = "Modo Claro";
+  }
+
+  themeToggle.addEventListener("click", () => {
+    if (body.classList.contains("dark-theme")) {
+      body.classList.remove("dark-theme");
+      themeToggle.textContent = "Modo Escuro";
+      localStorage.setItem("theme", "light");
+    } else {
+      body.classList.add("dark-theme");
+      themeToggle.textContent = "Modo Claro";
+      localStorage.setItem("theme", "dark");
+    }
+  });
+});

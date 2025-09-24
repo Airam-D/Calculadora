@@ -164,3 +164,75 @@ button:active {
     padding: 8px 15px;
   }
 }
+
+.dark-theme {
+  background-color: #1a1a1a;
+  color: #f0f4f8;
+}
+
+.dark-theme .calculator {
+  background-color: #2e2e2e;
+  border-color: #444444;
+}
+
+.dark-theme .calculator-screen {
+  background-color: #1c1c1c;
+  color: #e0e0e0;
+}
+
+.dark-theme button {
+  background-color: #404040;
+  color: #f0f4f8;
+}
+
+.dark-theme .operator {
+  background-color: #e76f51;
+  color: #ffffff;
+}
+
+.dark-theme .operator:hover {
+  background-color: #e55a36;
+}
+
+.dark-theme .all-clear,
+.dark-theme .clear-last {
+  background-color: #8338ec;
+  color: #ffffff;
+}
+
+.dark-theme .all-clear:hover,
+.dark-theme .clear-last:hover {
+  background-color: #722bb8;
+}
+
+.dark-theme .equal-sign {
+  background-color: #2a9d8f;
+  color: #ffffff;
+}
+
+.dark-theme .equal-sign:hover {
+  background-color: #21877b;
+}
+
+.dark-theme .scientific-button {
+  background-color: #2a9d8f;
+  color: #ffffff;
+}
+
+.dark-theme .scientific-button:hover {
+  background-color: #21877b;
+}
+
+.dark-theme .scientific {
+  background-color: #6a6a6a;
+  color: #ffffff;
+}
+
+.dark-theme .scientific:hover {
+  background-color: #555555;
+}
+
+.dark-theme .theme-toggle {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
