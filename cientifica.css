@@ -1,0 +1,128 @@
+body {
+  background-color: #f0f4f8;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.scientific-button {
+  text-decoration: none;
+  background-color: #2a9d8f;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.2s, transform 0.1s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.scientific-button:hover {
+  background-color: #21877b;
+  transform: scale(1.05);
+}
+
+.scientific-button:active {
+  transform: scale(0.98);
+}
+
+.calculator {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  width: 420px;
+  border: 1px solid #e0e6ed;
+}
+
+.calculator-screen {
+  background-color: #2e3549;
+  color: #ffffff;
+  font-size: 2.5rem;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  text-align: right;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  pointer-events: none;
+  width: 100%;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 15px;
+}
+
+button {
+  height: 60px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  font-weight: bold;
+  color: #495057;
+}
+
+button:hover {
+  background-color: #e9ecef;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.operator {
+  background-color: #f8961e;
+  color: #ffffff;
+}
+
+.operator:hover {
+  background-color: #f5840c;
+}
+
+.all-clear,
+.clear-last {
+  background-color: #e76f51;
+  color: #ffffff;
+}
+
+.all-clear:hover,
+.clear-last:hover {
+  background-color: #e55a36;
+}
+
+.equal-sign {
+  grid-column: span 2;
+  background-color: #2a9d8f;
+  color: #ffffff;
+}
+
+.equal-sign:hover {
+  background-color: #21877b;
+}
+
+.scientific {
+  background-color: #5d5d5d;
+  color: #ffffff;
+}
+
+.scientific:hover {
+  background-color: #424242;
+}
+
+.zero {
+  grid-column: span 2;
+}

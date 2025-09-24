@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Científica</title>
+    <link rel="stylesheet" href="cientifica.css" />
+  </head>
+  <body>
+    <div class="calculator-container">
+      <a href="index.html" class="scientific-button">Calculadora Básica</a>
+      <div class="calculator">
+        <input type="text" class="calculator-screen" value="0" disabled />
+
+        <div class="calculator-buttons">
+          <button type="button" class="scientific" value="sin">sin</button>
+          <button type="button" class="scientific" value="cos">cos</button>
+          <button type="button" class="scientific" value="tan">tan</button>
+          <button type="button" class="scientific" value="^">xʸ</button>
+          <button type="button" class="scientific" value="sqrt">√</button>
+
+          <button type="button" class="scientific" value="log">log</button>
+          <button type="button" class="scientific" value="ln">ln</button>
+          <button type="button" class="scientific" value="pi">π</button>
+          <button type="button" class="scientific" value="e">e</button>
+          <button type="button" class="scientific" value="!">n!</button>
+
+          <button type="button" class="all-clear" value="all-clear">AC</button>
+          <button type="button" class="clear-last" value="clear-last">
+            DEL
+          </button>
+          <button type="button" class="operator" value="(">(</button>
+          <button type="button" class="operator" value=")">)</button>
+
+          <button type="button" value="1">1</button>
+          <button type="button" value="2">2</button>
+          <button type="button" value="3">3</button>
+          <button type="button" class="operator" value="/">&divide;</button>
+          <button type="button" class="operator" value="*">&times;</button>
+
+          <button type="button" value="4">4</button>
+          <button type="button" value="5">5</button>
+          <button type="button" value="6">6</button>
+          <button type="button" class="operator" value="-">-</button>
+
+          <button type="button" value="7">7</button>
+          <button type="button" value="8">8</button>
+          <button type="button" value="9">9</button>
+          <button type="button" class="operator" value="+">+</button>
+
+          <button type="button" value="0">0</button>
+          <button type="button" class="decimal" value=".">.</button>
+          <button type="button" class="equal-sign" value="=">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/mathjs@10.6.4/lib/browser/math.js"></script>
+    <script src="cientifica.js"></script>
+  </body>
+</html>
