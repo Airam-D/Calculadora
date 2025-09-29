@@ -106,7 +106,7 @@ button:active {
 }
 
 .equal-sign {
-  grid-column: span 2;
+  grid-column: span 1;
   background-color: #2a9d8f;
   color: #ffffff;
 }
